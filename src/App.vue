@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <header>
-      <h1>Controle de Eventos - Cidade Santa </h1>
+      <h1>Controle de Eventos - Cidade Grande </h1>
     </header>
     <main>
       <EventTable />
@@ -9,7 +9,7 @@
       <Hierarchy />
     </main>
     <footer>
-      <p>© 2024 Cidade Santa GTARP - Controle de Eventos</p>
+      <p>© 2024 Cidade Grande GTARP - Controle de Eventos</p>
       <p>DeV PH ID : 8493</p>
     </footer>
   </div>
