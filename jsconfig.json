@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "@/*": [
+                "src/*"
+            ]
+        },
+        "types": [
+            "vite/client"
+        ]
+    },
+    "include": [
+        "src/**/*.js",
+        "src/**/*.vue",
+        "src/**/*.ts"
+    ]
+}

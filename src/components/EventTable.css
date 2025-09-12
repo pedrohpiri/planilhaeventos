@@ -1,0 +1,139 @@
+.event-table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #eee;
+    background-color: #222;
+}
+
+.event-table th,
+.event-table td {
+    border: 1px solid #444;
+    padding: 8px;
+    text-align: center;
+}
+
+.event-table .name {
+    text-align: left;
+    font-weight: bold;
+    color: #0af;
+}
+
+.event-table .green {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+.event-table .yellow {
+    background-color: #ffeb3b;
+    color: #000;
+}
+
+.event-table .orange {
+    background-color: #ff5722;
+    color: #fff;
+}
+
+.event-table .red {
+    background-color: #f44336;
+    color: #fff;
+}
+
+/* Responsive Design */
+
+/* Tablet Styles (768px and below) */
+@media (max-width: 768px) {
+    .event-table {
+        font-size: 14px;
+    }
+
+    .event-table th,
+    .event-table td {
+        padding: 6px;
+        min-width: 60px;
+    }
+
+    .event-table .name {
+        min-width: 120px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+/* Mobile Styles (480px and below) */
+@media (max-width: 480px) {
+    .event-table {
+        font-size: 12px;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .event-table thead,
+    .event-table tbody,
+    .event-table th,
+    .event-table td,
+    .event-table tr {
+        display: block;
+    }
+
+    .event-table thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    .event-table tr {
+        border: 1px solid #444;
+        margin-bottom: 10px;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .event-table td {
+        border: none;
+        border-bottom: 1px solid #444;
+        position: relative;
+        padding-left: 50%;
+        text-align: left;
+        white-space: normal;
+    }
+
+    .event-table td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        font-weight: bold;
+        color: #0af;
+    }
+
+    .event-table .name {
+        font-size: 14px;
+        padding-left: 6px;
+        text-align: left;
+    }
+
+    .event-table .name:before {
+        display: none;
+    }
+}
+
+/* Small Mobile Styles (360px and below) */
+@media (max-width: 360px) {
+    .event-table {
+        font-size: 11px;
+    }
+
+    .event-table td {
+        padding: 4px 6px;
+        padding-left: 40%;
+    }
+
+    .event-table td:before {
+        width: 35%;
+        font-size: 11px;
+    }
+}
