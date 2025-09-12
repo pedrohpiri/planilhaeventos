@@ -60,9 +60,9 @@ const participants = reactive([
 
 function getCellClass(value) {
   if (value === 0 || value === undefined) return ''
-  if (value >= 5) return 'green'
-  if (value >= 2) return 'yellow'
-  if (value === 1) return 'orange'
+  if (value > 3) return 'green'
+  if (value >= 2 && value <= 3) return 'yellow'
+  if (value === 1) return 'red'
   return ''
 }
 
