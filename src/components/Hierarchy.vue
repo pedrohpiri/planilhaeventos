@@ -18,80 +18,84 @@ const hierarchy = [
   {
     name: 'MASTER',
     count: 1,
-    icon: '👑',
+    icon: '🌞',
     members: [
-      { name: 'Gabiss', html: '@ADM | 💖Gabiss' }
+      { name: 'Gabiss', html: '@MASTER | 💔Gabiss' }
     ]
   },
   {
     name: 'ADM',
     count: 1,
-    icon: '👑',
+    icon: '🌞',
     members: [
-      { name: 'MK7', html: '@ADM | 🦇 MK7' }
+      { name: 'Zack', html: '@ADM | Zack #GCP🏆' }
     ]
   },
   {
-    name: 'RESP',
+    name: 'Responsável EvT',
     count: 1,
-    icon: '🛡️',
+    icon: '🌞',
     members: [
-      { name: 'Zack Cross', html: '@Resp. EvT | ! 𝓩𝓪𝓬𝓴 𝓒𝓻𝓸𝓼𝓼' }
+      { name: 'PH', html: '@Resp.EvT | 🐲 PH 20/24 | 8493' }
     ]
   },
   {
-    name: 'AUXILIAR',
+    name: 'Auxiliar EvT',
     count: 1,
-    icon: '⚔️',
+    icon: '🎉',
     members: [
-      { name: 'PH', html: '@Aux. EvT | 🐲 PH | 8493' }
+      { name: 'Sev777en', html: '@Aux.EvT | 🍀 Sev777en | 2450' }
     ]
   },
   {
-    name: 'LÍDER',
-    count: 2,
-    icon: '🎖️',
-    members: [
-      { name: 'Sev7en', html: '@Líd. EvT | 🐲Sev7en' },
-      { name: 'MarLock', html: '@Líd. EvT| 🐲 MarLock | 1120' }
-    ]
-  },
-  {
-    name: 'SUB LÍDER',
+    name: 'Líder EvT',
     count: 3,
-    icon: '🅰️',
+    icon: '🚀',
     members: [
-      { name: 'Geraldo', html: '@Sub. EvT | 🐲 Geraldo | 14158' },
-      { name: 'Chucky', html: '@Sub. EvT | 🐲 Chucky | 7809' },
-      { name: 'KIRA Nogame', html: '@Sub. EvT | 🐲 KIRA Nogame | 117' }
+      { name: 'Geraldo', html: '@Lid.EvT | 🐲Geraldo | 14158' },
+      { name: 'MarLock', html: '@Lid.EvT |🐲 MarLock#EvT🚀 | 1120' },
+      { name: 'Kira', html: '@Lid. EVT | 🐲Kira #GCP🏆 | 117' }
     ]
   },
   {
-    name: 'MEMBRO',
-    count: 21,
-    icon: '👤',
+    name: 'Sub-Líder EvT',
+    count: 2,
+    icon: '🚀',
     members: [
-      { name: 'Luluzinho Azul', html: '@EVT | 🐲 Luluzinho Azul | 25482' },
-      { name: 'gabriel magnata', html: '@EVT | 🐲 gabriel magnata | 1954' },
+      { name: 'Neggo trufa', html: '@Sub. EVT |🐲Neggo trufa | 1302' },
+      { name: 'Chucky', html: '@Sub.EvT| 🐲 Chucky #85% | 7809' }
+    ]
+  },
+  {
+    name: 'Equipe EvT',
+    count: 11,
+    icon: '✨',
+    members: [
+      { name: 'Camilla', html: '@EvT |🐉Camilla | 30224' },
+      { name: 'Carter', html: '@EvT | 🐲 Carter | 1176' },
+      { name: 'Luiz', html: '@EvT | 🐲 Luiz | 15427' },
+      { name: 'Matheus JM TD', html: '@EvT | 🐲 Matheus JM TD | 12074' },
+      { name: 'Rick Santana', html: '@EVT | 🐲 Rick Santana | 103' },
       { name: 'Ruivo', html: '@EVT | 🐲 Ruivo | 102' },
       { name: 'Gusta PLz', html: '@EvT | 🐲Gusta PLz | 4969' },
-      { name: 'dekaze silva', html: '@EVT | 🐲 dekaze silva | 10456' },
-      { name: 'vini toxic', html: '@EVT | 🐲 vini toxic | 25099' },
-      { name: 'Carter', html: '@EVT | 🐲 Carter | 1176' },
-      { name: 'Kauã', html: '@EVT | 🐲 Kauã | 22196' },
-      { name: 'camilla', html: '@EVT | 🐲 camilla | 30244' },
-      { name: 'Japones', html: '@EVT | 🐲 Japones | 318985' },
-      { name: 'HENRIQUE MUNIZ', html: '@EVT| 🐲HENRIQUE MUNIZ | 11888' },
-      { name: 'neggo truffa', html: '@EVT | 🐲 neggo truffa | 1302' },
-      { name: 'Matheus JM TD', html: '@EvT | 🐲 Matheus JM TD | 12074' },
-      { name: 'cleber', html: '@EVT-T | 🐲 cleber | 12555' },
-      { name: 'Luiz', html: '@EVT | 🐲 Luiz | 15427' },
-      { name: 'THX', html: '@EVT| 🐲 THX | 12719' },
-      { name: 'Eduardo Milk', html: '@EVT | 🐲 Eduardo Milk | 6399' },
-      { name: 'Emierri', html: '@EVT | 🐲 Emierri | 17918' },
-      { name: 'isadora', html: '@EVT | 🐲 isadora | 11517' },
-      { name: 'rick', html: '@EVT | 🐲 rick | 103' },
-      { name: 'MOTOMOTO DO GRAU', html: '@EVT | 🐲 MOTOMOTO DO GRAU | 13563' }
+      { name: 'THX ZIKA', html: '@EvT | 🐲THX ZIKA | 12719' },
+      { name: 'henrique muniz', html: '@EVT |🐲 henrique muniz | 11888' },
+      { name: 'Japones', html: '@EvT | 🐲 Japones | 31895' },
+      { name: 'Luluzinho Azul', html: '@EVT |🐲Luluzinho Azul | 25482' }
+    ]
+  },
+  {
+    name: 'Equipe EvT-T',
+    count: 7,
+    icon: '✨',
+    members: [
+      { name: 'Eduardo Milk', html: '@EvT-T | 🐲Eduardo Milk | 6399' },
+      { name: 'Gabriel Magnata', html: '@EVT-T | 🐲Gabriel Magnata | 1954' },
+      { name: 'Matheus', html: '@EVT-T | 🐲Matheus | 11517' },
+      { name: 'CLEBER', html: '@EvT-T | 🐲CLEBER | 12555' },
+      { name: 'Nick Piloto', html: '@EvT-T | 🐲Nick Piloto | 16338' },
+      { name: 'Astro', html: '@EvT-T | 🐲Astro #AntXit | 34971' },
+      { name: 'Bernardo', html: '@EVT-T | 🐲 Bernardo| 19652' }
     ]
   }
 ]
