@@ -2,11 +2,10 @@
   <div id="app">
     <header>
       <h1>Controle de Eventos - Cidade Grande </h1>
+      <button class="absence-button" @click="$router.push('/absence')">Ausência</button>
     </header>
     <main>
-      <EventTable />
-      <PerformanceRules />
-      <Hierarchy />
+      <router-view />
     </main>
     <footer>
       <p>© 2024 Cidade Grande GTARP - Controle de Eventos</p>
@@ -16,9 +15,6 @@
 </template>
 
 <script setup>
-import EventTable from './components/EventTable.vue'
-import Hierarchy from './components/Hierarchy.vue'
-import PerformanceRules from './components/PerformanceRules.vue'
 </script>
 
 <style>
@@ -35,8 +31,10 @@ import PerformanceRules from './components/PerformanceRules.vue'
 header {
   background-color: #1e1e1e;
   padding: 20px;
-  text-align: center;
   border-bottom: 1px solid #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 main {
   flex: 1;
@@ -52,6 +50,21 @@ footer {
 }
 h1 {
   margin: 0;
+}
+
+/* Botão Ausência no header */
+.absence-button {
+  background-color: #444;
+  color: #eee;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+.absence-button:hover {
+  background-color: #666;
 }
 
 /* Responsive Design */

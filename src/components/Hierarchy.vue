@@ -1,6 +1,6 @@
 <template>
   <section class="hierarchy">
-    <h2>📊 Hierarquia do Servidor</h2>
+    <h2>✨    ┃ 𝐇𝐈𝐄𝐑𝐀𝐑𝐐𝐔𝐈𝐀 𝐄𝐕𝐄𝐍𝐓𝐎𝐒 ┃ ✨</h2>
     <div v-for="(group, index) in hierarchy" :key="index" class="group">
       <h3>
         <span v-html="group.icon"></span>
