@@ -19,9 +19,9 @@ const hierarchy = [
     name: 'MASTER',
     count: 1,
     icon: '🌞',
-    members: [
-      { name: 'Polly', html: '@ORGs | 🎭 Polly' }
-    ]
+      members: [
+        { name: 'Polly', html: '🎭 Polly' }
+      ]
   },
   {
     name: 'ADM',
