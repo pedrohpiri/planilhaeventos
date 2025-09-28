@@ -49,7 +49,7 @@
           <td class="yellow">Amarelo</td>
         </tr>
         <tr>
-          <td>Acima de 49</td>
+          <td>Acima de 43</td>
           <td>Excelente</td>
           <td class="green">Verde</td>
         </tr>

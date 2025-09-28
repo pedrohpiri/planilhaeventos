@@ -50,11 +50,10 @@ const hierarchy = [
   },
   {
     name: 'Líder EvT',
-    count: 2,
+    count: 1,
     icon: '🚀',
     members: [
-      { name: 'Ducra', html: '@Lid.EvT | 🐲 Ducra #EvT🏆 | 9959' },
-      { name: 'Cris', html: '@Lid.EvT | 🐉Cris | 5909' }
+      { name: 'Ducra', html: '@Lid.EvT | 🐲 Ducra #EvT🏆 | 9959' }
     ]
   },
   {
@@ -76,10 +75,9 @@ const hierarchy = [
   },
   {
     name: 'Equipe EvT-T',
-    count: 2,
+    count: 1,
     icon: '✨',
     members: [
-      { name: 'Moraes', html: '@EvT-T | 🐲 Moraes | 40922' },
       { name: 'sants scoot', html: '@EvT-T | 🐲 sants scoot | 39745' }
     ]
   }
