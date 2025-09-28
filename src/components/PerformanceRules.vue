@@ -11,19 +11,19 @@
       </thead>
       <tbody>
         <tr>
-          <td>Acima de 3</td>
-          <td>Excelente</td>
-          <td class="green">Verde</td>
+          <td>Abaixo de 3</td>
+          <td>Baixo rendimento</td>
+          <td class="red">Vermelho</td>
         </tr>
         <tr>
-          <td>Entre 2 e 3</td>
+          <td>Entre 4 e 6</td>
           <td>Regular</td>
           <td class="yellow">Amarelo</td>
         </tr>
         <tr>
-          <td>1</td>
-          <td>Baixo rendimento</td>
-          <td class="red">Vermelho</td>
+          <td>Acima de 6</td>
+          <td>Excelente</td>
+          <td class="green">Verde</td>
         </tr>
       </tbody>
     </table>
@@ -39,19 +39,19 @@
       </thead>
       <tbody>
         <tr>
-          <td>21 ou mais</td>
-          <td>Excelente</td>
-          <td class="green">Verde</td>
+          <td>Abaixo de 21</td>
+          <td>Baixo rendimento</td>
+          <td class="red">Vermelho</td>
         </tr>
         <tr>
-          <td>14 a 20</td>
+          <td>Entre 28 e 42</td>
           <td>Regular</td>
           <td class="yellow">Amarelo</td>
         </tr>
         <tr>
-          <td>Abaixo de 14</td>
-          <td>Baixo rendimento</td>
-          <td class="red">Vermelho</td>
+          <td>Acima de 49</td>
+          <td>Excelente</td>
+          <td class="green">Verde</td>
         </tr>
       </tbody>
     </table>

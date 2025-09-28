@@ -19,16 +19,16 @@ const hierarchy = [
     name: 'MASTER',
     count: 1,
     icon: '🌞',
-      members: [
-        { name: 'Polly', html: '🎭 Polly' }
-      ]
+    members: [
+      { name: 'Bacco', html: '@🔱Bacco' }
+    ]
   },
   {
     name: 'ADM',
     count: 1,
     icon: '🌞',
     members: [
-      { name: 'Zack', html: '@ADM | Zack #EvT🏆' }
+      { name: 'Zack', html: '@ADM |💜 Zack #EvT 🏆  🏆' }
     ]
   },
   {
@@ -36,23 +36,25 @@ const hierarchy = [
     count: 1,
     icon: '🌞',
     members: [
-      { name: 'PH', html: '@Resp.EvT | 💔  PH 20/24 | 8493' }
+      { name: 'PH', html: '@Resp.EvT | 💔 PH 20/24 | 8493' }
     ]
   },
   {
     name: 'Auxiliar EvT',
-    count: 1,
+    count: 2,
     icon: '🎉',
     members: [
-      { name: 'MarLock', html: '@AuX. EvT |🐲 MarLock #EvT| 1120' }
+      { name: 'Kira', html: '@AuX. EvT |🦊Kira #EvT 🏆 | 117' },
+      { name: 'Sombroso', html: '@AuX. EvT |🐱 Sombroso  | 1030' }
     ]
   },
   {
     name: 'Líder EvT',
-    count: 1,
+    count: 2,
     icon: '🚀',
     members: [
-      { name: 'Kira', html: '@Lid. EVT | 🐲Kira #EvT 🏆 | 117' }
+      { name: 'Ducra', html: '@Lid.EvT | 🐲 Ducra #EvT🏆 | 9959' },
+      { name: 'Cris', html: '@Lid.EvT | 🐉Cris | 5909' }
     ]
   },
   {
@@ -61,18 +63,15 @@ const hierarchy = [
     icon: '🚀',
     members: [
       { name: 'Neggo trufa', html: '@Sub. EVT |🐲Neggo trufa | 1302' },
-      { name: 'Ducra', html: '@Sub.EvT | 🐲 Ducra | 9959' }
+      { name: 'Thx', html: '@Sub. EvT | 🐲Thx #EvT🏆 | 12719' }
     ]
   },
   {
     name: 'Equipe EvT',
-    count: 4,
+    count: 1,
     icon: '✨',
     members: [
-      { name: 'THX ZIKA', html: '@EvT | 🐲THX ZIKA | 12719' },
-      { name: 'henrique muniz', html: '@EVT |🐲 henrique muniz | 11888' },
-      { name: 'Luluzinho Azul', html: '@EVT | 🐲Luluzinho Azul | 25482' },
-      { name: 'SOUZA', html: '@EvT | 🐲 SOUZA | 11814' }
+      { name: 'Souza', html: '@EvT | 🐲 Souza | 11814' }
     ]
   },
   {
@@ -80,8 +79,8 @@ const hierarchy = [
     count: 2,
     icon: '✨',
     members: [
-      { name: 'CLEBER', html: '@EvT | 🐲CLEBER | 12555' },
-      { name: 'Nick Piloto', html: '@EvT-T | 🐲Nick Piloto | 16338' }
+      { name: 'Moraes', html: '@EvT-T | 🐲 Moraes | 40922' },
+      { name: 'sants scoot', html: '@EvT-T | 🐲 sants scoot | 39745' }
     ]
   }
 ]

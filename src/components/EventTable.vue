@@ -13,10 +13,10 @@
         <tbody>
           <tr v-for="participant in week.participants" :key="participant.name">
             <td class="name" data-label="Nome">{{ participant.name }}</td>
-            <td v-for="date in week.dates" :key="date" :class="getCellClass(participant.events[date])" :data-label="date">
+            <td v-for="date in week.dates" :key="date" :class="getCellClass(participant.events[date], week.name)" :data-label="date">
               {{ participant.events[date] || 0 }}
             </td>
-            <td :class="getTotalClass(calculateTotal(participant.events))" data-label="Total">{{ calculateTotal(participant.events) }}</td>
+            <td :class="getTotalClass(calculateTotal(participant.events), week.name)" data-label="Total">{{ calculateTotal(participant.events) }}</td>
           </tr>
         </tbody>
       </table>
@@ -92,21 +92,47 @@ const weeks = reactive([
       { name: 'Nick Piloto', events: { '14/09': 1, '15/09': 0, '16/09': 0, '17/09': 1, '18/09': 0, '19/09': 0, '20/09': 5 } },
       { name: 'Ducra', events: { '14/09': 0, '15/09': 0, '16/09': 0, '17/09': 0, '18/09': 0, '19/09': 5, '20/09': 4 } }
     ]
+  },
+  {
+    name: 'Quarta semana',
+    period: '21/09 a 27/09',
+    dates: ['21/09', '22/09', '23/09', '24/09', '25/09', '26/09', '27/09'],
+    participants: [
+      { name: 'Ducra', events: { '21/09': 5, '22/09': 6, '23/09': 2, '24/09': 3, '25/09': 4, '26/09': 2, '27/09': 6 } },
+      { name: 'Cris', events: { '21/09': 0, '22/09': 0, '23/09': 0, '24/09': 0, '25/09': 0, '26/09': 0, '27/09': 0 } },
+      { name: 'Neggo trufa', events: { '21/09': 1, '22/09': 0, '23/09': 0, '24/09': 1, '25/09': 2, '26/09': 4, '27/09': 3 } },
+      { name: 'Thx', events: { '21/09': 5, '22/09': 5, '23/09': 2, '24/09': 4, '25/09': 7, '26/09': 5, '27/09': 5 } },
+      { name: 'Souza', events: { '21/09': 1, '22/09': 1, '23/09': 3, '24/09': 3, '25/09': 2, '26/09': 1, '27/09': 0 } },
+      { name: 'Moraes', events: { '21/09': 0, '22/09': 0, '23/09': 0, '24/09': 0, '25/09': 0, '26/09': 1, '27/09': 0 } },
+      { name: 'sants scoot', events: { '21/09': 0, '22/09': 0, '23/09': 0, '24/09': 4, '25/09': 2, '26/09': 2, '27/09': 2 } }
+    ]
   }
 ])
 
-function getCellClass(value) {
-  if (value === 0 || value === undefined) return ''
-  if (value > 3) return 'green'
-  if (value >= 2 && value <= 3) return 'yellow'
-  if (value === 1) return 'red'
+function getCellClass(value, weekName) {
+  if (value <= 0 || value === undefined) return ''
+  if (weekName === 'Quarta semana') {
+    if (value > 6) return 'green'
+    if (value >= 4 && value <= 6) return 'yellow'
+    if (value < 4) return 'red'
+  } else {
+    if (value > 3) return 'green'
+    if (value >= 2 && value <= 3) return 'yellow'
+    if (value === 1) return 'red'
+  }
   return ''
 }
 
-function getTotalClass(total) {
-  if (total >= 20) return 'green'
-  if (total >= 10) return 'yellow'
-  return 'red'
+function getTotalClass(total, weekName) {
+  if (weekName === 'Quarta semana') {
+    if (total > 49) return 'green'
+    if (total >= 28 && total <= 42) return 'yellow'
+    return 'red'
+  } else {
+    if (total >= 20) return 'green'
+    if (total >= 10) return 'yellow'
+    return 'red'
+  }
 }
 function calculateTotal(events) {
   return Object.values(events).reduce((sum, val) => sum + (val || 0), 0)
